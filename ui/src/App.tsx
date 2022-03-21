@@ -6,6 +6,7 @@ import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CarOffers from './components/CarOffers';
 import Customers from './components/Customers';
+import NewCar from './components/NewCar';
 
 function MainLayout() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path="/caroffers" element={<CarOffers />}>
           </Route>
           <Route path="/customers" element={<Customers />}>
+          </Route>
+          <Route path="/newcar" element={<NewCar />}>
           </Route>
           <Route path="/" element={<div>Home</div>}>
           </Route>

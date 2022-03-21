@@ -13,5 +13,9 @@ namespace WebCarDealership.Requests
         [Required]
         [Range(0, 10000)]
         public int AvailableStock { get; set; }
+
+        public decimal UnitPrice { get; set; }
+
+        public string Image { get; set; }
     }
 }

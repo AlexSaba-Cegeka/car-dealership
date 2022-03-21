@@ -20,9 +20,7 @@ namespace WebCarDealership.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var offers = await _dbContext.CarOffers.ToListAsync();
-            offers.First().DiscountPercentage = 0.15m;
-            return Ok(offers);
+            return Ok(await _dbContext.CarOffers.ToListAsync());
         }
 
         [HttpPost]
@@ -32,7 +30,9 @@ namespace WebCarDealership.Controllers
             {
                 Make = model.Make,
                 Model = model.Model,
-                AvailableStock = model.AvailableStock
+                AvailableStock = model.AvailableStock,
+                UnitPrice = model.UnitPrice,
+                Image = model.Image ?? string.Empty
             };
 
             _dbContext.CarOffers.Add(dbModel);

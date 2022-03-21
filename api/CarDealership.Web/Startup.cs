@@ -38,6 +38,13 @@ namespace WebCarDealership
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CarDealership v1"));
             }
 
+            app.UseCors(app =>
+            {
+                app.AllowAnyHeader();
+                app.AllowAnyMethod();
+                app.AllowAnyOrigin();
+            });
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
