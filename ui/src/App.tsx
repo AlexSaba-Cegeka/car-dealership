@@ -1,15 +1,11 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Outlet,
-} from "react-router-dom";
-import CarOffers from './components/CarOffers';
-import Customers from './components/Customers'
-import { NavigationBar } from './NavigationBar';
+import { NavigationBar } from './components/NavigationBar';
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CarOffers from './components/CarOffers';
+import Customers from './components/Customers';
 
 function MainLayout() {
   return (
@@ -39,5 +35,3 @@ function App() {
 }
 
 export default App;
-
-
