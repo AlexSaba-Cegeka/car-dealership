@@ -1,6 +1,4 @@
-﻿using WebCarDealership;
-
-namespace CarDealership.Data.Models
+﻿namespace CarDealership.Data.Models
 {
     public class Order
     {

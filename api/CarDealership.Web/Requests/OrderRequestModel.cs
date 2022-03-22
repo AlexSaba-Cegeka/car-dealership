@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebCarDealership.Requests
+namespace CarDealership.Web.Requests
 {
     public class OrderRequestModel
     {

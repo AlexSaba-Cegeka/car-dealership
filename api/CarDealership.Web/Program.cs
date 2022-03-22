@@ -1,4 +1,6 @@
-namespace WebCarDealership
+using CarDealership.Data;
+
+namespace CarDealership.Web
 {
     public class Program
     {

@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CarDealership.Data;
+using Microsoft.EntityFrameworkCore;
 
-namespace WebCarDealership
+namespace CarDealership.Web
 {
     public static class DbInitializer
     {

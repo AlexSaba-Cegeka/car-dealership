@@ -1,10 +1,11 @@
-﻿using CarDealership.Data.Models;
+﻿using CarDealership.Data;
+using CarDealership.Data.Models;
+using CarDealership.Web.Requests;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using WebCarDealership.Requests;
 
-namespace WebCarDealership.Controllers
+namespace CarDealership.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]

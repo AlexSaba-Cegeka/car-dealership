@@ -1,7 +1,7 @@
 ﻿using CarDealership.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace WebCarDealership
+namespace CarDealership.Data
 {
     public class DealershipDbContext : DbContext
     {
