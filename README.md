@@ -15,3 +15,23 @@
 - In ecranul de *Buy* vom selecta Clientul care cumpara masina si cantitatea
 - Daca introducem o cantitate mai mare decat stocul disponibil afisam o eroare si nu permitem cumpararea
 - Rezultatul final va fi generarea unui *Order*
+
+## Bonus
+
+### Customers
+- In tabelul Customers numele clientului va fi de tip link. Link-ul va directiona catre o pagina _/customers/{customerId}_
+- In noua pagina vom afisa Numele si Email-ul clientului in read-only
+- Dedesubt vom afisa un tabel cu toate masinile cumparate de acel client
+
+  _Exemplu:_
+  
+  **Ion Popescu**
+  
+  ionpopescu@gmail.com
+  
+  | Car | Date | Price |
+  |-----|------|-------|
+  | Dacia Logan | 21 March 2022 | 5000eur|
+  | Dacia Sandero | 21 March 2021 | 4000eur|
+  ....
+
